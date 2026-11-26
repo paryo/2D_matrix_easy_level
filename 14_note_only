@@ -1,0 +1,17 @@
+Problem 14: Traverse Lower Triangle - Logic Note
+
+Status:
+- Logic & loop bound verified today; C implementation and full dry-run scheduled for tomorrow.
+
+Core Logic:
+- Target elements: Main diagonal (row == col) and below (row > col).
+- Skip elements: Upper triangle (row < col).
+- Inner loop bound: Start col j at 0 and run while j <= i.
+
+Row-wise Col Range (3x3 example):
+- i = 0 -> j = 0 (0 <= 0) -> (0,0)
+- i = 1 -> j = 0, 1 (j <= 1) -> (1,0), (1,1)
+- i = 2 -> j = 0, 1, 2 (j <= 2) -> (2,0), (2,1), (2,2)
+
+Next Step:
+- Write C function, run on sample 3x3 matrix, and record detailed step-by-step dry-run.
